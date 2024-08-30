@@ -6,17 +6,63 @@
 }
 
 :root {
-    --White: hsl(0, 0%, 100%);
-    --Slate-300: hsl(212, 45%, 89%);
-    --Slate-500: hsl(216, 15%, 48%);
-    --Slate-900: hsl(218, 44%, 22%);
+    --White: #FFFFFF;
+    --light-grey: #D5E1EF;
+    --grey: #7D889E;
+    --dark-navy: #1F314F;
+    --blue-shade: #3685FF;
+    --blue: #2C7DFA;
 }
 
 body {
+    background-color: var(--light-grey) ;
     font-family: "Outfit", sans-serif;
-    font-size: 15px;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+article {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.card {
+    padding: 16px;
+    background-color: var(--White);
+    border-radius: 20px;
+    width: 20rem;
+    height: 31.063rem;
+    text-align: center;
+    user-select: none;
+
+    & img {
+        width: 18rem;
+        height: 18rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    & h1 {
+        color: var(--dark-navy);
+        font-size: 1.375rem;
+        margin-top: 24px;
+        user-select: text;
+    }
+
+    & p {
+        color: var(--grey);
+        margin-top: 16px;
+        user-select: text;
+    }
+}
+
+footer {
+
+    & .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+    }
+    & .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
