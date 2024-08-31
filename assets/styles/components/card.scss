@@ -2,37 +2,37 @@
 
 // Block: card
 .card {
+  padding: 16px;
+  background-color: var(--White);
+  border-radius: 20px;
+  width: 20rem;
+  height: 31.063rem;
+  text-align: center;
+  user-select: none;
+  box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.0477);
+
+  // Element: image
+  &__image {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  // Element: title
+  &__title {
+    color: var(--dark-navy);
+    font-size: 1.375rem;
+    margin-top: 24px;
+    user-select: text;
+    font-weight: bold;
+  }
+
+  // Element: paragraph
+  &__paragraph {
+    color: var(--grey);
+    user-select: text;
     padding: 16px;
-    background-color: var(--White);
-    border-radius: 20px;
-    width: 20rem;
-    height: 31.063rem;
-    text-align: center;
-    user-select: none;
-    box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.0477);
-
-    // Element: image
-    &__image {
-        width: 18rem;
-        height: 18rem;
-        border-radius: 10px;
-        cursor: pointer;
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    }
-
-    // Element: title
-    &__title {
-        color: var(--dark-navy);
-        font-size: 1.375rem;
-        margin-top: 24px;
-        user-select: text;
-        font-weight: bold;
-    }
-
-    // Element: paragraph
-    &__paragraph {
-        color: var(--grey);
-        user-select: text;
-        padding: 16px;
-    }
+  }
 }
